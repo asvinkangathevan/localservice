@@ -2,7 +2,7 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Local-Service </title>
+  <title>Local-Service</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -12,67 +12,62 @@
   </header>
 
   <main>
-      <h1>Nos Services</h1>
+    <h1>Nos Services</h1>
+
     <section>
       <h3>Créez votre site web simplement</h3>
       <p>Des sites modernes et accessibles pour les entreprises locales.</p>
-     
+    </section>
 
     <section>
-       <h3>Site Vitrine</h3>
-       <p>Présentez votre activité avec un design clair et professionnel.</p>
-       <img src="vitrine.jpg" alt="Site vitrine">
-       <a href="https://fr.squarespace.com/design-de-site-web?channel=pnb&subchannel=go&campaign=pnb-go-fr-fr-core_website-phr&subcampaign=(make-fr_r%C3%A9aliser-un-site-web_phr)&gclsrc=aw.ds&gad_source=1&gad_campaignid=19025005586&gbraid=0AAAAADxS_FJgorLS6fGnv-TR-DCNqyLPR&gclid=Cj0KCQjwjL3HBhCgARIsAPUg7a655-Fq0d0ExzNg_1towAJdefsLBmuyCBxzapk6SJSWNzgiPv5x0PUaArycEALw_wcB">
+      <h3>Site Vitrine</h3>
+      <p>Présentez votre activité avec un design clair et professionnel.</p>
+      <img src="vitrine.jpg" alt="Site vitrine">
+      <a class="btn" href="https://fr.squarespace.com/design-de-site-web?channel=pnb&subchannel=go&campaign=pnb-go-fr-fr-core_website-phr&subcampaign=(make-fr_r%C3%A9aliser-un-site-web_phr)&gclsrc=aw.ds&gad_source=1&gad_campaignid=19025005586&gbraid=0AAAAADxS_FJgorLS6fGnv-TR-DCNqyLPR&gclid=Cj0KCQjwjL3HBhCgARIsAPUg7a655-Fq0d0ExzNg_1towAJdefsLBmuyCBxzapk6SJSWNzgiPv5x0PUaArycEALw_wcB">
         En savoir plus</a>
     </section>
 
     <section>
-     
-      <h3>Refonte de Site</h3>
-       <p>Modernisez votre ancien site pour attirer plus de clients.</p>
+      <h3>Refonte de site</h3>
+      <p>Modernisez votre ancien site pour attirer plus de clients.</p>
       <img src="renfonte.png" alt="Refonte de site internet">
-      <a href="https://fr.wix.com/">
-        En savoir plus</a>
+      <a class="btn" href="https://fr.wix.com/"  target="_blank">En savoir plus</a>
     </section>
 
     <section>
-     
-    <h3>Maintenance</h3>
-     <p>Gardez votre site à jour et sécurisé toute l’année.</p>
-     <img src="maintenance-site-internet.avif" alt="Maintenance de site internet">
-      <a href="https://www.sitew.com/">
-        En savoir plus</a>
+      <h3>Maintenance</h3>
+      <p>Gardez votre site à jour et sécurisé toute l’année.</p>
+      <img src="maintenance-site-internet.avif" alt="Maintenance de site internet">
+     <a class="btn" href="https://www.sitew.com/">En savoir plus</a>
     </section>
 
-
-      <script>  
-        function transitionTo(url) {
-            document.body.classList.add('fade-out');
-            setTimeout(() => {
-                window.location.href = url;
-            }, 500); // Durée identique à celle du CSS
-        }
-
-        function alerteBox() {
-            alert("Formulaire envoyé avec succès !");
-        }
-    </script>
-    
-    
-  
     <section class="contact-content" id="contact">
       <div class="container">
         <div class="contact-title">
-          <a href="formulaire.html"><h4>Contactez-nous</h4></a>
+          <a href="formulaire.html" onclick="transitionTo('formulaire.html')"><h4>Contactez-nous</h4></a>
         </div>
       </div>
     </section>
-
   </main>
 
- <footer>
+
+
+  <script>
+    function transitionTo(url) {
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500); // Durée identique à celle du CSS
+    }
+
+    function alerteBox() {
+      alert("Formulaire envoyé avec succès !");
+    }
+  </script>
+
+    <footer>
     <p>© 2025 WebLocal Création — Création de sites web pour entreprises locales</p>
-  </footer>
+    </footer>
 
 </body>
 </html>

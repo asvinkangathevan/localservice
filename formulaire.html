@@ -2,37 +2,49 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>resto</title>
+  <title>Local-Service Formulaire</title>
   <link rel="stylesheet" href="style.css">
 </head> 
-  <body>
-  <section class="contact-content" id="contact">
-        <div class="container">
-            <div class="contact-title">
-                <h4>Contact </h4>
-                
-            </div>
-            <div class="contact">
-                <form name="submitToGoogleSheet">
-                    <input type="text" name="NOM" placeholder="Nom" required>
-                    <input type="email" name="EMAIL" placeholder="Email" required>
-                    <input type="text" name="SUBJECT" placeholder="Subject">
-                    <textarea name="MESSAGE" placeholder="Message"></textarea>
-                    <input type="submit" onclick="alerteBox()" value="Send Message" class="submit">
-                </form>
-                <span id="msg"></span>
-            </div>
-        </div>
-    </section>
-    <script>
-      function alerteBox() {
-            alert("Formulaire envoyé avec succès !");
-        }
+<body>
 
-    </script>
-    <footer>
-    <p>&copy; 2025 Resto français. Tous droits réservés.</p>
+  <section class="contact-content" id="contact">
+    <div class="container">
+      <div class="contact-title">
+        <h4>Contact</h4>
+      </div>
+      <div class="contact">
+        <form name="submitToGoogleSheet">
+          <input type="text" name="NOM" placeholder="Nom" required>
+          <input type="email" name="EMAIL" placeholder="Email" required>
+          <input type="text" name="SUBJECT" placeholder="Sujet">
+          <textarea name="MESSAGE" placeholder="Message"></textarea>
+          <input type="submit" onclick="alerteBox()" value="Envoyer le message" class="submit">
+        </form>
+        <span id="msg"></span>
+      </div>
+    </div>
+  </section>
+
+  <div class="back-to-portfolio">
+    <button onclick="transitionTo('index.html')">Retour à l'accueil</button>
+  </div>
+
+  <footer>
+    <p>© 2025 WebLocal Création — Création de sites web pour entreprises locales</p>
   </footer>
 
-  </body>
+  <script>
+    function transitionTo(url) {
+      document.body.classList.add('fade-out');
+      setTimeout(() => {
+        window.location.href = url;
+      }, 500); // Durée identique à celle du CSS
+    }
+
+    function alerteBox() {
+      alert("Formulaire envoyé avec succès !");
+    }
+  </script>
+
+</body>
 </html>
